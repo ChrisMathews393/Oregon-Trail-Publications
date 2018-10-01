@@ -23,13 +23,13 @@ div#HeaderDiv {
     
 }
 div#IntroDiv {
-    font-family: Arial
     font-size-adjust: auto;
     font-size: 200%;
     text-align: center;
     width: 60%;
     padding: 10px;
-    margin:auto
+    margin:auto;
+    font-stretch: extra-condensed;
     
         
         
