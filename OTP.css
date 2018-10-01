@@ -1,0 +1,24 @@
+body {
+   
+    background-color: #90ee90;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+        
+}
+li {
+    display: inline;
+    border: 2px solid blue
+}
+div {
+    font-family: Verdana;
+    margin: auto;
+    width: 60%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+    text-align: center;
+    
+    
+}
