@@ -12,7 +12,7 @@ li {
     display: inline;
     border: 2px solid blue
 }
-div {
+div#HeaderDiv {
     font-family: Verdana;
     margin: auto;
     width: 60%;
@@ -21,4 +21,16 @@ div {
     text-align: center;
     
     
+}
+div#IntroDiv {
+    font-family: Arial
+    font-size-adjust: auto;
+    font-size: 200%;
+    text-align: center;
+    width: 60%;
+    padding: 10px;
+    margin:auto
+    
+        
+        
 }
