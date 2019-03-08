@@ -1,15 +1,29 @@
 body {
    
-    background-color: #90ee90;
+    background-color: #515151;
+	color: #D4D2D2
 }
 ul {
-    list-style-type: none;
+    list-style-type: armenian;
     margin: auto;
-    padding: 0;
-        
+    padding: 25;
+	text-decoration-color: white;
+	
+		
+	}
+a {
+	color: white;
+	text-decoration: none;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	font-size-adjust: 56;
+	
+	
 }
 li {
     display: inline;
+	font-color: white;
+	padding: 255;
+	
     
     
 }
@@ -20,7 +34,7 @@ li {
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
-        
+    color: #ffffff    
 }
 
 
@@ -29,10 +43,10 @@ div#HeaderDiv {
     margin: auto;
     margin-top: 10px;
     width: 60%;
-    border: 3px solid #73AD21;
+    border: 3px solid #ffffff;
     padding: 10px;
     text-align: center;
-    
+    color: #ffffff
     
 }
 div#IntroDiv {
@@ -43,9 +57,12 @@ div#IntroDiv {
     padding: 10px;
     margin:auto;
     font-stretch: extra-condensed;
-    
+    color: #ffffff
         
         
+}
+#AdHeader{
+	text-align: center;
 }
 div#AboutDiv {
     font-size-adjust: auto;
@@ -55,5 +72,173 @@ div#AboutDiv {
     padding: 15px;
     margin:auto;
     font-stretch: expanded;
-    
+    color: #ffffff
+}#AboutUsHeader strong {
+	font-family: Gotham, Helvetica Neue, Helvetica, Arial, sans-serif;
+	border-color: aliceblue
+}
+
+
+/*
+ * Made by Erik Terwan
+ * 24th of November 2015
+ * MIT License
+ *
+ *
+ * If you are thinking of using this in
+ * production code, beware of the browser
+ * prefixes.
+ */
+
+body
+{
+  margin: 0;
+  padding: 0;
+  
+  /* make it look decent enough */
+  background: #232323;
+  color: #cdcdcd;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+}
+
+a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+a:hover
+{
+  color: tomato;
+}
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+	display: block;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
 }
